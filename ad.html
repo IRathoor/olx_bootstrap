@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OLX</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <style>.footer{background-color: #f7f8f8};</style>
+    <style>.mobile{width: 100px;}</style>
+  </head>
+  <body>
+  
+    <div class="container-fluid p-0 ">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none">
+        <div class="container-fluid">
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand mt-0 p-2 " href="#">
+            <svg
+              height="17"
+              viewBox="0 0 36.289 20.768"
+              alt="Logo"
+              class="_10c831ef"
+            >
+              <path
+                d="M18.9 20.77V0h4.93v20.77zM0 10.39a8.56 8.56 0 1 1 8.56 8.56A8.56 8.56 0 0 1 0 10.4zm5.97-.01a2.6 2.6 0 1 0 2.6-2.6 2.6 2.6 0 0 0-2.6 2.6zm27 5.2l-1.88-1.87-1.87 1.88H25.9V12.3l1.9-1.9-1.9-1.89V5.18h3.27l1.92 1.92 1.93-1.92h3.27v3.33l-1.9 1.9 1.9 1.9v3.27z"
+              ></path>
+            </svg>
+          </a>
+          <div
+          class=""
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="88.9"
+            height="33"
+            alt="OLX Motors"
+            class="_1a6eed8f"
+          >
+            <defs>
+              <linearGradient
+                id="a"
+                x1=".5"
+                x2=".5"
+                y2="1"
+                gradientUnits="objectBoundingBox"
+              >
+                <stop offset="0" stop-color="#ddd"></stop>
+                <stop offset="1" stop-color="#fff"></stop>
+              </linearGradient>
+            </defs>
+            <path
+              stroke="rgba(0,0,0,0)"
+              d="M40 20.5h1v-6.2l3 6.2h.6l2.8-6.2v6.2h1v-8.3h-1L44.1 19l-3-6.8H40zm18.3-4.2A4.1 4.1 0 0 0 54 12a4.1 4.1 0 0 0-4.2 4.3 4.1 4.1 0 0 0 4.2 4.3 4.1 4.1 0 0 0 4.2-4.3zm-7.3 0a3 3 0 0 1 3-3.3 3 3 0 0 1 3.2 3.3 3 3 0 0 1-3 3.3 3 3 0 0 1-3.2-3.3zm8.2-3.3h2.3v7.5h1V13H65v-1h-5.7zm15 3.3A4.1 4.1 0 0 0 70 12a4.1 4.1 0 0 0-4.2 4.3 4.1 4.1 0 0 0 4.2 4.3 4.1 4.1 0 0 0 4.2-4.3zm-7.2 0a3 3 0 0 1 3-3.3 3 3 0 0 1 3 3.3 3 3 0 0 1-3 3.3 3 3 0 0 1-3-3.3zm13.2-1.7c0 1-.6 1.6-1.8 1.6h-1.6V13h1.6c1.2 0 1.8.6 1.8 1.6zM75.7 12v8.4h1V17H78l2 3.4h1.3l-2-3.5a2.4 2.4 0 0 0 2-2.4c0-1.4-1-2.5-3-2.5zm12.7 6c0-3-4.5-1.7-4.5-3.8 0-1 .7-1.4 1.6-1.4a1.5 1.5 0 0 1 1.6 1.2h1.2a2.5 2.5 0 0 0-2.7-2.1c-1.7 0-2.8 1-2.8 2.3 0 3 4.5 1.7 4.5 4 0 .7-.6 1.3-1.7 1.3a1.5 1.5 0 0 1-1.7-1.4h-1.2c0 1.4 1.3 2.4 3 2.4a2.5 2.5 0 0 0 2.7-2.4z"
+            ></path>
+            <path
+              fill="url(#a)"
+              d="M0 16.5a16.5 16.5 0 1 1 33 0 16.5 16.5 0 0 1-33 0z"
+              opacity=".6"
+            ></path>
+            <path
+              d="M24.7 13.5a1.1 1.1 0 0 0-1.4-.7l-.6.2-1-2.2-.4-.1a16 16 0 0 0-4.8-.7 12 12 0 0 0-4.3.7l-.3.1-1 2.3h-.5a1.1 1.1 0 0 0-.6 2v.2a4 4 0 0 0-.4 1.5v4a2.1 2.1 0 0 0 0 .6.7.7 0 0 0 .8.5h1.6a.7.7 0 0 0 .8-.5 2.1 2.1 0 0 0 0-.7v-.3a47.1 47.1 0 0 0 8.3 0v.3a2.1 2.1 0 0 0 0 .7.7.7 0 0 0 .8.5h1.6a.7.7 0 0 0 .7-.5 2.1 2.1 0 0 0 .1-.7v-4a3.7 3.7 0 0 0-.4-1.5V15h.3a1.1 1.1 0 0 0 .7-1.5zm-12.2-2.1a11.3 11.3 0 0 1 4-.6 15.2 15.2 0 0 1 4.6.6l.9 1.8a17.6 17.6 0 0 1-4.3.4H17a28.2 28.2 0 0 1-5.4-.3zm-.6 9.3a2.2 2.2 0 0 1 0 .4h-1.7a2.2 2.2 0 0 1 0-.4V20a1 1 0 0 0 .3 0l1.4.2v.4zm11.4 0a2.2 2.2 0 0 1 0 .4h-1.6a2.2 2.2 0 0 1 0-.4v-.4H23a1 1 0 0 0 .4-.2zm.5-6.5l-1.2.4.5 1a3 3 0 0 1 .3 1.2V18l-.1.7c0 .3-.2.7-.5.7-3 .3-4.5.5-6 .5s-3-.2-6.2-.5c-.2 0-.3-.3-.4-.6V18a17 17 0 0 1 0-1 3.2 3.2 0 0 1 .3-1.3l.5-1-1-.2a.3.3 0 0 1-.2-.4.3.3 0 0 1 .4-.3l1.1.4a23.6 23.6 0 0 0 5 .3h1.4a17.9 17.9 0 0 0 4.6-.5h.3l1-.4a.3.3 0 0 1 .4.3.3.3 0 0 1-.2.4z"
+            ></path>
+            <path
+              d="M12 16a1.2 1.2 0 1 0 1.1 1.2A1.2 1.2 0 0 0 12 16zm0 1.6a.4.4 0 1 1 .3-.4.4.4 0 0 1-.4.4zm9.6-1.6a1.2 1.2 0 1 0 1.2 1.2 1.2 1.2 0 0 0-1.2-1.2zm0 1.6a.4.4 0 1 1 .5-.4.4.4 0 0 1-.5.4zm-7.8.2h6v.8h-6z"
+            ></path>
+          </svg>
+        </div>
+        <div
+        class=""
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="97.25"
+          height="33"
+          alt="OLX Property"
+          class="_1a6eed8f"
+        >
+          <defs>
+            <linearGradient
+              id="a"
+              x1=".5"
+              x2=".5"
+              y2="1"
+              gradientUnits="objectBoundingBox"
+            >
+              <stop offset="0" stop-color="#ddd"></stop>
+              <stop offset="1" stop-color="#fff"></stop>
+            </linearGradient>
+          </defs>
+          <path
+            stroke="rgba(0,0,0,0)"
+            d="M41.1 16.64v-3.07h1.6c1.25 0 1.78.58 1.78 1.55 0 .94-.53 1.52-1.78 1.52zm4.5-1.52c0-1.37-.93-2.45-2.9-2.45H40v8.36h1.1v-3.49h1.6c2.08 0 2.9-1.15 2.9-2.42zm5.82.01c0 .94-.54 1.6-1.77 1.6h-1.6v-3.16h1.6c1.25 0 1.77.61 1.77 1.57zm-4.47-2.46v8.36h1.1v-3.42h1.31l2 3.42h1.3l-2.1-3.5a2.36 2.36 0 0 0 2-2.4c0-1.36-.94-2.45-2.9-2.45zm15.3 4.18a4.12 4.12 0 0 0-4.2-4.28 4.13 4.13 0 0 0-4.2 4.28 4.13 4.13 0 0 0 4.2 4.27 4.12 4.12 0 0 0 4.2-4.27zm-7.3 0a3.05 3.05 0 0 1 3.1-3.33 3.05 3.05 0 0 1 3.07 3.33 3.06 3.06 0 0 1-3.08 3.32 3.06 3.06 0 0 1-3.09-3.32zm9.82-.2v-3.08h1.6c1.25 0 1.78.58 1.78 1.55 0 .94-.53 1.52-1.77 1.52zm4.5-1.53c0-1.36-.93-2.44-2.9-2.44h-2.7v8.35h1.1v-3.49h1.6c2.08 0 2.9-1.15 2.9-2.42zm5.85-2.46h-4.5v8.37h4.5v-.9h-3.4v-2.88h3.04v-.9h-3.04v-2.8h3.4zm6.14 2.48c0 .93-.54 1.6-1.78 1.6h-1.6v-3.17h1.6c1.25 0 1.78.61 1.78 1.57zm-4.48-2.47v8.36h1.1v-3.42h1.32l1.98 3.42h1.3l-2.1-3.5a2.36 2.36 0 0 0 2-2.4c0-1.36-.94-2.45-2.9-2.45zm6.78.9h2.29v7.46h1.1v-7.47h2.27v-.89h-5.66zm9.04 4.3v3.16h1.1v-3.15l2.72-5.2h-1.2l-2.07 4.23-2.07-4.24h-1.2z"
+          ></path>
+          <path
+            fill="url(#a)"
+            d="M0 16.5a16.5 16.5 0 1 1 33 0 16.5 16.5 0 0 1-33 0z"
+            opacity=".57"
+          ></path>
+          <path
+            d="M25.03 21.92v-9.35l-4.99-1.66v1.05l4 1.33v8.59h-5V7.85h-8.38v14.08h-.4v1h15.17v-1zm-6.98-11.68v11.68h-6.4V8.84h6.4z"
+          ></path>
+          <path
+            d="M15.17 10.3h1.61v.8h-1.6zm-2.42 0h1.6v.8h-1.6zm2.42 1.6h1.61v.81h-1.6zm-2.42 0h1.6v.81h-1.6zm2.42 2.42h1.61v.81h-1.6zm-2.42 0h1.6v.81h-1.6zm2.42 1.62h1.61v.8h-1.6zm-2.42 0h1.6v.8h-1.6zm2.42 2.42h1.61v.8h-1.6zm-2.42 0h1.6v.8h-1.6zm8.87-4.04h.8v.81h-.8zm-1.62 0h.8v.81H20zm1.62 1.62h.8v.8h-.8zm-1.62 0h.8v.8H20zm1.62 2.42h.8v.8h-.8zm-1.62 0h.8v.8H20z"
+          ></path>
+        </svg>
+         </div>
+         <div class="col. sticky-top mt-3 input-group mb-3">
+          <input
+            type="text"
+            placeholder="Pakistan"
+            class="form-control"
+            aria-label="Text input with dropdown button"
+          />
+          <button
+            class="btn btn-outline-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          ></button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+        </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="d-none d-sm-block header sticky-top m-0 " style="background-color: #f7f8f8; height: 118.5px;">
+        <div class="row ">
+          <div
+            class="d-none d-sm-block col-md-auto mt-md-3 col-xl-auto p-xl-1 mt-xl-2 offset-xl-1 ms-3"
+          >
+            <svg
+              height="17"
+              viewBox="0 0 36.289 20.768"
+              alt="Logo"
+              class="_10c831ef"
+            >
+              <path
+                d="M18.9 20.77V0h4.93v20.77zM0 10.39a8.56 8.56 0 1 1 8.56 8.56A8.56 8.56 0 0 1 0 10.4zm5.97-.01a2.6 2.6 0 1 0 2.6-2.6 2.6 2.6 0 0 0-2.6 2.6zm27 5.2l-1.88-1.87-1.87 1.88H25.9V12.3l1.9-1.9-1.9-1.89V5.18h3.27l1.92 1.92 1.93-1.92h3.27v3.33l-1.9 1.9 1.9 1.9v3.27z"
+              ></path>
+            </svg>
+          </div>
+          <div
+            class="d-none d-sm-block col-md-auto p-md-1 mt-md-2 ms-md-4 col-xl-auto p-xl-1 mt-xl-2 ms-xl-4"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="88.9"
+              height="33"
+              alt="OLX Motors"
+              class="_1a6eed8f"
+            >
+              <defs>
+                <linearGradient
+                  id="a"
+                  x1=".5"
+                  x2=".5"
+                  y2="1"
+                  gradientUnits="objectBoundingBox"
+                >
+                  <stop offset="0" stop-color="#ddd"></stop>
+                  <stop offset="1" stop-color="#fff"></stop>
+                </linearGradient>
+              </defs>
+              <path
+                stroke="rgba(0,0,0,0)"
+                d="M40 20.5h1v-6.2l3 6.2h.6l2.8-6.2v6.2h1v-8.3h-1L44.1 19l-3-6.8H40zm18.3-4.2A4.1 4.1 0 0 0 54 12a4.1 4.1 0 0 0-4.2 4.3 4.1 4.1 0 0 0 4.2 4.3 4.1 4.1 0 0 0 4.2-4.3zm-7.3 0a3 3 0 0 1 3-3.3 3 3 0 0 1 3.2 3.3 3 3 0 0 1-3 3.3 3 3 0 0 1-3.2-3.3zm8.2-3.3h2.3v7.5h1V13H65v-1h-5.7zm15 3.3A4.1 4.1 0 0 0 70 12a4.1 4.1 0 0 0-4.2 4.3 4.1 4.1 0 0 0 4.2 4.3 4.1 4.1 0 0 0 4.2-4.3zm-7.2 0a3 3 0 0 1 3-3.3 3 3 0 0 1 3 3.3 3 3 0 0 1-3 3.3 3 3 0 0 1-3-3.3zm13.2-1.7c0 1-.6 1.6-1.8 1.6h-1.6V13h1.6c1.2 0 1.8.6 1.8 1.6zM75.7 12v8.4h1V17H78l2 3.4h1.3l-2-3.5a2.4 2.4 0 0 0 2-2.4c0-1.4-1-2.5-3-2.5zm12.7 6c0-3-4.5-1.7-4.5-3.8 0-1 .7-1.4 1.6-1.4a1.5 1.5 0 0 1 1.6 1.2h1.2a2.5 2.5 0 0 0-2.7-2.1c-1.7 0-2.8 1-2.8 2.3 0 3 4.5 1.7 4.5 4 0 .7-.6 1.3-1.7 1.3a1.5 1.5 0 0 1-1.7-1.4h-1.2c0 1.4 1.3 2.4 3 2.4a2.5 2.5 0 0 0 2.7-2.4z"
+              ></path>
+              <path
+                fill="url(#a)"
+                d="M0 16.5a16.5 16.5 0 1 1 33 0 16.5 16.5 0 0 1-33 0z"
+                opacity=".6"
+              ></path>
+              <path
+                d="M24.7 13.5a1.1 1.1 0 0 0-1.4-.7l-.6.2-1-2.2-.4-.1a16 16 0 0 0-4.8-.7 12 12 0 0 0-4.3.7l-.3.1-1 2.3h-.5a1.1 1.1 0 0 0-.6 2v.2a4 4 0 0 0-.4 1.5v4a2.1 2.1 0 0 0 0 .6.7.7 0 0 0 .8.5h1.6a.7.7 0 0 0 .8-.5 2.1 2.1 0 0 0 0-.7v-.3a47.1 47.1 0 0 0 8.3 0v.3a2.1 2.1 0 0 0 0 .7.7.7 0 0 0 .8.5h1.6a.7.7 0 0 0 .7-.5 2.1 2.1 0 0 0 .1-.7v-4a3.7 3.7 0 0 0-.4-1.5V15h.3a1.1 1.1 0 0 0 .7-1.5zm-12.2-2.1a11.3 11.3 0 0 1 4-.6 15.2 15.2 0 0 1 4.6.6l.9 1.8a17.6 17.6 0 0 1-4.3.4H17a28.2 28.2 0 0 1-5.4-.3zm-.6 9.3a2.2 2.2 0 0 1 0 .4h-1.7a2.2 2.2 0 0 1 0-.4V20a1 1 0 0 0 .3 0l1.4.2v.4zm11.4 0a2.2 2.2 0 0 1 0 .4h-1.6a2.2 2.2 0 0 1 0-.4v-.4H23a1 1 0 0 0 .4-.2zm.5-6.5l-1.2.4.5 1a3 3 0 0 1 .3 1.2V18l-.1.7c0 .3-.2.7-.5.7-3 .3-4.5.5-6 .5s-3-.2-6.2-.5c-.2 0-.3-.3-.4-.6V18a17 17 0 0 1 0-1 3.2 3.2 0 0 1 .3-1.3l.5-1-1-.2a.3.3 0 0 1-.2-.4.3.3 0 0 1 .4-.3l1.1.4a23.6 23.6 0 0 0 5 .3h1.4a17.9 17.9 0 0 0 4.6-.5h.3l1-.4a.3.3 0 0 1 .4.3.3.3 0 0 1-.2.4z"
+              ></path>
+              <path
+                d="M12 16a1.2 1.2 0 1 0 1.1 1.2A1.2 1.2 0 0 0 12 16zm0 1.6a.4.4 0 1 1 .3-.4.4.4 0 0 1-.4.4zm9.6-1.6a1.2 1.2 0 1 0 1.2 1.2 1.2 1.2 0 0 0-1.2-1.2zm0 1.6a.4.4 0 1 1 .5-.4.4.4 0 0 1-.5.4zm-7.8.2h6v.8h-6z"
+              ></path>
+            </svg>
+          </div>
+          <div
+            class="d-none d-sm-block col-md-auto p-md-1 mt-md-2 ms-md-4 col-xl-auto p-xl-1 mt-xl-2 ms-xl-4"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="97.25"
+              height="33"
+              alt="OLX Property"
+              class="_1a6eed8f"
+            >
+              <defs>
+                <linearGradient
+                  id="a"
+                  x1=".5"
+                  x2=".5"
+                  y2="1"
+                  gradientUnits="objectBoundingBox"
+                >
+                  <stop offset="0" stop-color="#ddd"></stop>
+                  <stop offset="1" stop-color="#fff"></stop>
+                </linearGradient>
+              </defs>
+              <path
+                stroke="rgba(0,0,0,0)"
+                d="M41.1 16.64v-3.07h1.6c1.25 0 1.78.58 1.78 1.55 0 .94-.53 1.52-1.78 1.52zm4.5-1.52c0-1.37-.93-2.45-2.9-2.45H40v8.36h1.1v-3.49h1.6c2.08 0 2.9-1.15 2.9-2.42zm5.82.01c0 .94-.54 1.6-1.77 1.6h-1.6v-3.16h1.6c1.25 0 1.77.61 1.77 1.57zm-4.47-2.46v8.36h1.1v-3.42h1.31l2 3.42h1.3l-2.1-3.5a2.36 2.36 0 0 0 2-2.4c0-1.36-.94-2.45-2.9-2.45zm15.3 4.18a4.12 4.12 0 0 0-4.2-4.28 4.13 4.13 0 0 0-4.2 4.28 4.13 4.13 0 0 0 4.2 4.27 4.12 4.12 0 0 0 4.2-4.27zm-7.3 0a3.05 3.05 0 0 1 3.1-3.33 3.05 3.05 0 0 1 3.07 3.33 3.06 3.06 0 0 1-3.08 3.32 3.06 3.06 0 0 1-3.09-3.32zm9.82-.2v-3.08h1.6c1.25 0 1.78.58 1.78 1.55 0 .94-.53 1.52-1.77 1.52zm4.5-1.53c0-1.36-.93-2.44-2.9-2.44h-2.7v8.35h1.1v-3.49h1.6c2.08 0 2.9-1.15 2.9-2.42zm5.85-2.46h-4.5v8.37h4.5v-.9h-3.4v-2.88h3.04v-.9h-3.04v-2.8h3.4zm6.14 2.48c0 .93-.54 1.6-1.78 1.6h-1.6v-3.17h1.6c1.25 0 1.78.61 1.78 1.57zm-4.48-2.47v8.36h1.1v-3.42h1.32l1.98 3.42h1.3l-2.1-3.5a2.36 2.36 0 0 0 2-2.4c0-1.36-.94-2.45-2.9-2.45zm6.78.9h2.29v7.46h1.1v-7.47h2.27v-.89h-5.66zm9.04 4.3v3.16h1.1v-3.15l2.72-5.2h-1.2l-2.07 4.23-2.07-4.24h-1.2z"
+              ></path>
+              <path
+                fill="url(#a)"
+                d="M0 16.5a16.5 16.5 0 1 1 33 0 16.5 16.5 0 0 1-33 0z"
+                opacity=".57"
+              ></path>
+              <path
+                d="M25.03 21.92v-9.35l-4.99-1.66v1.05l4 1.33v8.59h-5V7.85h-8.38v14.08h-.4v1h15.17v-1zm-6.98-11.68v11.68h-6.4V8.84h6.4z"
+              ></path>
+              <path
+                d="M15.17 10.3h1.61v.8h-1.6zm-2.42 0h1.6v.8h-1.6zm2.42 1.6h1.61v.81h-1.6zm-2.42 0h1.6v.81h-1.6zm2.42 2.42h1.61v.81h-1.6zm-2.42 0h1.6v.81h-1.6zm2.42 1.62h1.61v.8h-1.6zm-2.42 0h1.6v.8h-1.6zm2.42 2.42h1.61v.8h-1.6zm-2.42 0h1.6v.8h-1.6zm8.87-4.04h.8v.81h-.8zm-1.62 0h.8v.81H20zm1.62 1.62h.8v.8h-.8zm-1.62 0h.8v.8H20zm1.62 2.42h.8v.8h-.8zm-1.62 0h.8v.8H20z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="row justify-content-md-between">
+          <div
+            class="d-none d-sm-block col-md-1 mt-md-3 col-xl-1 offset-xl-1 mt-xl-3 ms-1"
+          >
+            <svg
+              height="35"
+              viewBox="0 0 36.289 20.768"
+              alt="Logo"
+              class="b28a1eb6"
+            >
+              <path
+                d="M18.9 20.77V0h4.93v20.77zM0 10.39a8.56 8.56 0 1 1 8.56 8.56A8.56 8.56 0 0 1 0 10.4zm5.97-.01a2.6 2.6 0 1 0 2.6-2.6 2.6 2.6 0 0 0-2.6 2.6zm27 5.2l-1.88-1.87-1.87 1.88H25.9V12.3l1.9-1.9-1.9-1.89V5.18h3.27l1.92 1.92 1.93-1.92h3.27v3.33l-1.9 1.9 1.9 1.9v3.27z"
+              ></path>
+            </svg>
+          </div>
+          <div
+            class="d-none d-sm-block col-md-5 col-lg-4 mt-md-3 ms-md-3 col-xl-3 mt-xl-3"
+          >
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                placeholder="Pakistan"
+                class="form-control"
+                aria-label="Text input with dropdown button"
+              />
+              <button
+                class="btn btn-outline-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              ></button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class=" d-none d-sm-block col-sm col-md-3 col-lg-4 mt-md-3 col-xl-4 mt-xl-3 me-xl-3"
+          >
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                placeholder="Find Cars, Mobile Phones and more..."
+                class="form-control"
+                aria-label="Text input with dropdown button"
+              />
+              <button
+                class="btn btn-outline-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              ></button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="d-none d-sm-block col-md-1 mt-md-4 text-md-center p-md-0 col-xl-auto mt-xl-3"
+          >
+            <a href="">Login</a>
+          </div>
+          <div
+            class="d-none d-sm-block col-md-1 p-md-0 mt-md-3 me-md-3 col-xl-1 mt-xl-1 p-xl-0 ms-xl-3"
+          >
+            <a
+              href="https://www.olx.com.pk/items"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="./Assests/Images/iconSalesBorder - Copy.png"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="row shadow-sm bg-body m-md-0 justify-content-md-evenly justify-content-lg-start ">
+        <div class=" d-none d-sm-block col-xl-auto offset-xl-1 p-xl-0 col-md-auto p-md-0">
+          <div class="navbar navbar-expand-lg navbar-light bg-white">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <small>All catagories</small>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-none d-sm-block col-xl-auto col-md-auto">
+          <div class="navbar navbar-expand-lg navbar-light bg-white">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><small>Mobile Phones</small></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-none d-sm-block col-xl-auto p-xl-0 col-md-auto ms-md-1 px-md-0">
+          <div class="navbar navbar-expand-lg navbar-light bg-white">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><small>Cars</small></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-none d-sm-block col-xl-auto p-xl-0 col-md-auto ms-md-1 px-md-0">
+          <div class="navbar navbar-expand-lg navbar-light bg-white">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><small>Motorcycles</small></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-none d-sm-block col-xl-auto p-xl-0 col-md-auto ms-md-1 px-md-0">
+          <div class="navbar navbar-expand-lg navbar-light bg-white">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><small>Houses</small></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-none d-sm-block col-xl-auto p-xl-0 col-md-auto ms-md-1 px-md-0">
+          <div class="navbar navbar-expand-lg navbar-light bg-white">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><small>TV - Video - Audio</small></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-none d-sm-block col-xl-auto p-xl-0 col-md-auto ms-md-1 px-md-0">
+          <div class="navbar navbar-expand-lg navbar-light bg-white">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><small>Tablets</small></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-none d-sm-block col-xl-auto p-xl-0 col-md-auto ms-md-1 px-md-0">
+          <div class="navbar navbar-expand-lg navbar-light bg-white">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><small>Land & Plots</small></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row bg-body m-md-0 justify-content-md-evenly justify-content-lg-start mt-md-1 mb-md-0">
+        <div class=" d-none d-sm-block col-xl-auto offset-xl-1 p-xl-0 col-md-auto my-md-0 p-md-0">
+          <div class="navbar navbar-expand-lg navbar-light bg-white p-md-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link p-md-1" href="#"><small>Home</small></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class=" d-none d-sm-block col-xl-auto p-xl-0 col-md-auto p-md-0 my-md-0 mx-md-0">
+          <div class="navbar navbar-expand-lg navbar-light bg-white p-md-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link p-md-1" href="#"><small>/ Mobiles</small></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class=" d-none d-sm-block col-xl-auto p-xl-0 col-md-auto p-md-0 my-md-0 mx-md-0">
+          <div class="navbar navbar-expand-lg navbar-light bg-white p-md-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link p-md-1" href="#"><small>/ Mobile Phones</small></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class=" d-none d-sm-block col-xl-auto p-xl-0 col-md-auto p-md-0 my-md-0 mx-md-0">
+          <div class="navbar navbar-expand-lg navbar-light bg-white p-md-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link p-md-1" href="#"><small>/ Mobile Phones in Sindh</small></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class=" d-none d-sm-block col-xl-auto p-xl-0 col-md-auto p-md-0 my-md-0 mx-md-0">
+          <div class="navbar navbar-expand-lg navbar-light bg-white p-md-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link p-md-1" href="#"><small>/ Mobile Phones in Karachi</small></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class=" d-none d-sm-block col-xl-auto p-xl-0 col-md-auto p-md-0 my-md-0 mx-md-0">
+          <div class="navbar navbar-expand-lg navbar-light bg-white p-md-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link p-md-1" href="#"><small>/ Mobile Phones in Saddar Town</small></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class=" d-none d-sm-block col-xl-auto p-xl-0 col-md-auto p-md-0 my-md-0 mx-md-1">
+          <div class="navbar navbar-expand-lg navbar-light bg-white p-md-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link p-md-1" href="#"><small>/ Samsung Mobile in Saddar Town</small></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row p-2">
+        <div class="col py-1 text-center">
+          <img src=".//Assests/Images/p-2ad1.png" alt="" class="w-75 img-fluid" />
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-lg-7 bg-dark m-0">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="d-flex justify-content-center">
+                  <img src="./Assests/Images/p2-m1800x600.jpeg" class="d-block  img-fluid" alt="...">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                  <img src="./Assests/Images/p2-m2800x600.jpeg" class="d-block  img-fluid" alt="...">
+                </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                  <img src="./Assests/Images/p2-m3800x600.jpeg" class="d-block  img-fluid" alt="...">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                  <img src="./Assests/Images/p2-m4800x600.jpeg" class="d-block  img-fluid" alt="...">
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>      
+            </div>
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="col mt-md-2 ms-md-2 ">
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-2">
+                      <img src="./Assests/Images/iconProfile.png" class="img-fluid w-100" alt="...">
+                    </div>
+                    <div class="col-lg-9 ">
+                      <div class="card-body">
+                        <h5 class="card-title">Mobile Merchat Abdul Haseeb</h5>
+                        <p class="card-text"><small class="text-muted">Member Since May 2017</small></p>
+                        <p class="card-text"><small class="text-muted">See Profile<i class="bi bi-chevron-right"></i> </small></p>
+                        <a href="#" class=" col-11 btn btn-lg btn-close-white border-black border border-3">Chat</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <h3 class="card-title fw-bold">Location</h3>
+                    <p class="card-text"><i class="bi bi-geo-alt"></i> Saddar Town, Karachi.</p>
+                  </div>
+                </div>
+                <div class="row justify-content-md-between mt-3">
+                <div class="col-lg-5 col-md col-sm">
+                  <p>AD ID 1075007894</p>
+                </div>
+                  <div class="col-lg-5 col-md text-end- col-sm ">
+                  <a class="fw-bold text-decoration-none" href=""><i class="bi bi-flag"></i>  Report this ad</a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-7 my-1 ms-2">
+            <div class="card">
+              <div class="card-body">
+                <h1 class="card-title fw-bold">Rs 134,999 </i> <i class="bi bi-suit-heart float-end fs-4"></i></h1>
+                <h4 class="card-text">Samsung note 20 ultra 12gb/256gb cpid approved <br/>stock available</h4>
+                <div class="row">
+                  <div class="col-lg-6"><small><i class="bi bi-geo-alt"></i> Saddar Town, Karachi.</small></div>
+                  <div class="col-lg-6 text-end"><small>2 weeks ago</small></div>
+                </div>  
+              </div>  
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-7 my-4 ms-2">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">Details</h4>
+                <div class="row">
+                  <div class="col-3">Brand</small></div>
+                  <div class="col-3 fw-bold">Apple iPhone</div>
+                  <div class="col-3">Price</small></div>
+                  <div class="col-3 fw-bold">134,999</div>
+                  <div class="row mt-4">
+                    <div class="col-auto col.">Condition</small></div>
+                    <div class="col-3 text-end">Used</div>
+                </div>  
+              </div>  
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-7 my-1 ms-2 col-md">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">Description</h4>
+                <p class="card-text">iphone 12pro 128gb non pta <br/> 
+                  83 battery health <br/> 
+                  100% ok phone water pack <br/> 
+                  condition 10/9 <br/> 
+                  gold color <br/> </p>
+                 
+              </div>  
+            </div>
+          </div>
+        </div>
+      
+      <div class="footer d-none d-sm-block shadow-lg mt-3 ms-md-2">
+      <div class="row mt-3">
+        <div class="col-md-3 offset-xl-1 text-uppercase fw-bold text-muted ms-xl-1">Popular Categories</div>
+        <div class="col-md-3 text-uppercase fw-bold text-muted">Trending Searches</div>
+        <div class="col-md-2 text-uppercase fw-bold text-muted">About Us</div>
+        <div class="col-md-1 text-uppercase fw-bold text-muted">OLX</div>
+        <div class="col-md-2 text-uppercase fw-bold text-muted">Follow us</div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 offset-xl-1 text-muted ms-1"><small>Cars</small></div>
+        <div class="col-md-3 text-muted"><small>Bikes</small></div>
+        <div class="col-md-2 text-muted"><small>About Dubizzle Group</small></div>
+        <div class="col-md-1 text-muted"><small>Help</small></div>
+        <div class="col-md-2 text-muted">
+          <i class="bi bi-facebook fs-4"></i>
+          <i class="bi bi-youtube ms-xl-2 fs-4"></i>
+          <i class="bi bi-instagram ms-xl-2 fs-4"></i>
+          <i class="bi bi-twitter ms-xl-2 fs-4 "></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 offset-xl-1 text-muted ms-1"><small>Flats for rent</small></div>
+        <div class="col-md-3 text-muted"><small>Watches</small></div>
+        <div class="col-md-2 text-muted"><small>OLX Blog</small></div>
+        <div class="col-md-1 text-muted"><small>Sitemap</small></div>
+        <div class="col-md-2 text-muted"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 offset-xl-1 text-muted ms-1"><small>Mobile Phones</small></div>
+        <div class="col-md-3 text-muted"><small>Books</small></div>
+        <div class="col-md-2 text-muted"><small>Contact Us</small></div>
+        <div class="col-md-3 text-muted"><small>Terms of us</small>e</div>
+        <div class="col-md-2 text-muted"></div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-md-3 offset-xl-1 text-muted ms-1"><small>Jobs</small></div>
+        <div class="col-md-3 text-muted"><small>Dogs</small></div>
+        <div class="col-md-2 text-muted"><small>OLX for Businesses</small></div>
+        <div class="col-md-2 text-muted"><small>Privacy Policy</small>y</div>
+        <div class="col-md-2 text-muted"></div>
+      </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
